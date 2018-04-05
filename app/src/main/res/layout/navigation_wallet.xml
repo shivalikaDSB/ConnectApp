@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="true"
+    tools:context=".NavigationWallet">
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/d_icon_wallet"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_marginLeftPercent="6%"-->
+        <!--app:layout_marginTopPercent="6.5%"-->
+        <!--android:src="@drawable/icon_menu"-->
+        <!--/>-->
+        <TextView
+            android:id="@+id/N_Earned_ydp"
+            app:layout_widthPercent="70%"
+            app:layout_heightPercent="7%"
+            app:layout_marginLeftPercent="6%"
+            android:text="Money Earned From YDP Programs"
+
+            android:textSize="15dp"
+            android:textColor="#000"
+            app:layout_marginTopPercent="5%"
+            android:clickable="true" />
+
+    <TextView
+        android:id="@+id/N_Earned_icdp"
+        app:layout_widthPercent="70%"
+        app:layout_heightPercent="7%"
+        app:layout_marginLeftPercent="6%"
+        android:layout_below="@+id/N_Earned_ydp"
+        android:text="Money Earned From ICDP Programs"
+
+        android:textSize="15dp"
+        android:textColor="#000"
+        app:layout_marginTopPercent="5%"
+        android:clickable="true"
+
+        />
+    <!--<ImageView-->
+        <!--android:id="@+id/d_icon_score"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_marginLeftPercent="6%"-->
+        <!--app:layout_marginTopPercent="18.5%"-->
+        <!--android:src="@drawable/icon_menu"/>-->
+
+
+    <TextView
+        android:id="@+id/N_myscore"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="7%"
+        app:layout_marginLeftPercent="6%"
+        android:text="My Score"
+        android:layout_below="@+id/N_Earned_icdp"
+        android:textSize="15dp"
+        android:textColor="#000"
+        app:layout_marginTopPercent="5%"
+        android:clickable="true" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/d_icon_upcoming"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_marginLeftPercent="6%"-->
+        <!--app:layout_marginTopPercent="30.5%"-->
+        <!--android:src="@drawable/icon_menu"/>-->
+
+    <TextView
+        android:id="@+id/N_points"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="7%"
+        app:layout_marginLeftPercent="6%"
+        android:text="My Points"
+        android:layout_below="@+id/N_myscore"
+        android:textSize="15dp"
+
+        android:textColor="#000"
+        app:layout_marginTopPercent="5%"
+        android:clickable="true"
+      />
+        <TextView
+            android:id="@+id/N_store"
+            app:layout_widthPercent="20%"
+            app:layout_heightPercent="7%"
+            app:layout_marginLeftPercent="6%"
+            android:text="DSB Store"
+
+            android:layout_below="@+id/N_points"
+            android:textSize="15dp"
+            android:textColor="#000"
+            app:layout_marginTopPercent="5%"
+            android:clickable="true" />
+
+    </android.support.percent.PercentRelativeLayout>
+</LinearLayout>

@@ -1,0 +1,222 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="true"
+    tools:context=".PointsTotal">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".NavigationLeft">
+
+        <android.support.percent.PercentRelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!-- TODO: Update blank fragment layout -->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/p_avtar"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_profile"
+                app:layout_heightPercent="10%"
+                app:layout_marginTopPercent="4%"
+                app:layout_widthPercent="11%"
+                app:civ_circle_background_color="#fff"/>
+
+            <TextView
+                android:id="@+id/p_text_change_avtar"
+                android:layout_below="@+id/p_avtar"
+                android:layout_centerHorizontal="true"
+                android:text="Change Avatar"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_heightPercent="4%"
+                app:layout_marginTopPercent="2%"
+                app:layout_widthPercent="30%"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="24%">
+
+                <View
+                    android:layout_width="00dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="#000" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/p_account"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:text="Account"
+                android:gravity="start|center_vertical"
+                android:textAllCaps="false"
+
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_heightPercent="8%"
+                app:layout_marginLeftPercent="14%"
+                app:layout_marginTopPercent="28%"
+                app:layout_widthPercent="80%" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_marginLeftPercent="15%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="38%">
+
+                <View
+                    android:layout_width="00dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="#000" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/p_notification"
+                android:layout_below="@+id/p_account"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:text="Notification"
+                android:gravity="start|center_vertical"
+                android:textAllCaps="false"
+                android:textColor="#000"
+
+                android:textSize="18dp"
+                app:layout_heightPercent="8%"
+                app:layout_marginLeftPercent="14%"
+                app:layout_marginTopPercent="5%"
+                app:layout_widthPercent="80%" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_marginLeftPercent="15%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="51%">
+
+                <View
+                    android:layout_width="00dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="#000" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/p_password"
+                android:layout_below="@+id/p_notification"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:text="Change Password"
+                android:gravity="start|center_vertical"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_heightPercent="8%"
+                app:layout_marginLeftPercent="14%"
+                app:layout_marginTopPercent="5%"
+                app:layout_widthPercent="80%" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_marginLeftPercent="15%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="65%">
+
+                <View
+                    android:layout_width="00dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="#000" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/p_icon_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/p_account"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="67dp"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginTopPercent="30%"
+                app:srcCompat="@drawable/icon_account" />
+
+            <ImageView
+                android:id="@+id/p_icon_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/p_notification"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginTopPercent="43%"
+                app:srcCompat="@drawable/icon_notification" />
+
+            <ImageView
+                android:id="@+id/p_icon_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/p_password"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/icon_password_settings"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginTopPercent="56%" />
+
+            <Button
+                android:id="@+id/p_chatbox"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:text="Chat Box"
+                android:onClick="chatbox"
+                android:gravity="start|center_vertical"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="18dp"
+                app:layout_heightPercent="8%"
+                app:layout_marginLeftPercent="14%"
+                app:layout_marginTopPercent="68%"
+                app:layout_widthPercent="80%"/>
+
+            <ImageView
+                android:id="@+id/p_icon_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/p_password"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/icon_account"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginTopPercent="70%" />
+
+        </android.support.percent.PercentRelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

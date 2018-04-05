@@ -1,0 +1,399 @@
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/r_scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="DuplicateIds"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:background="#fff"
+    android:clickable="true"
+    android:windowSoftInputMode="adjustResize">
+
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout-->
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/l_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ViewFlipper
+                    android:id="@+id/viewflipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoStart="true"
+                    android:flipInterval="1500" >
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/img_1"
+                        android:scaleType="fitXY"
+                        app:riv_corner_radius="20dp"
+                        app:riv_border_width="2dip"
+                        app:riv_border_color="#333333"
+                        android:layout_width="430dp"
+                        app:riv_mutate_background="true"
+                        app:riv_tile_mode="repeat"
+                        android:layout_gravity="center|center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_ydp_2"
+                        android:layout_marginTop="12dp" />
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/img_2"
+                        android:layout_width="430dp"
+                        android:layout_gravity="center|center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_icdp_3"
+                        android:scaleType="fitXY"
+                        app:riv_corner_radius="20dp"
+                        app:riv_border_width="2dip"
+                        app:riv_border_color="#333333"
+                        app:riv_mutate_background="true"
+                        app:riv_tile_mode="repeat"
+                        android:layout_marginTop="12dp"/>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/img_3"
+                        android:layout_width="430dp"
+                        android:layout_gravity="center|center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_ydp_2"
+                        android:scaleType="fitXY"
+                        app:riv_corner_radius="20dp"
+                        app:riv_border_width="2dip"
+                        app:riv_border_color="#333333"
+                        app:riv_mutate_background="true"
+                        app:riv_tile_mode="repeat"
+                        android:layout_marginTop="12dp"/>
+                </ViewFlipper>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ydp_event_detail"
+                app:layout_widthPercent="95%"
+                app:layout_heightPercent="8%"
+                android:textSize="25dp"
+                android:layout_below="@+id/l_flipper"
+                android:text="Event Details"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginTopPercent="4%"
+                app:layout_marginRightPercent="4%"
+  android:textColor="#000"
+                android:textStyle="bold"/>
+
+            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                android:id="@+id/ydp_event_detail_1"
+                android:layout_below="@+id/ydp_event_detail"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+                app:layout_widthPercent="95%" />
+            <TextView
+                android:id="@+id/to_target"
+                app:layout_widthPercent="95%"
+                app:layout_heightPercent="8%"
+                android:textSize="25dp"
+                android:layout_below="@+id/ydp_event_detail_1"
+                android:text="Who to target?"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginTopPercent="5%"
+
+  android:textColor="#000"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/target_detail_1"
+                android:layout_alignEnd="@+id/e_people_reg_count"
+                android:layout_below="@+id/to_target"
+                android:layout_marginTop="126dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Full Conference Program. This year's National Conference between 18-20 February 2018 is at the Four Points Hotel,"
+  android:textColor="#000"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+                app:layout_widthPercent="95%" />
+            <TextView
+                android:id="@+id/ydp_event_description_1"
+                app:layout_widthPercent="95%"
+                app:layout_heightPercent="8%"
+                android:layout_below="@+id/target_detail_1"
+                android:text="Event Description"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="4%"
+  android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/e_date"
+                app:layout_widthPercent="18%"
+                app:layout_heightPercent="5%"
+                android:layout_below="@+id/ydp_event_description_1"
+                android:text="Date"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+  android:textColor="#000"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/e_venue"
+                app:layout_widthPercent="18%"
+                app:layout_heightPercent="5%"
+                android:layout_below="@+id/ydp_event_description_1"
+                android:layout_toRightOf="@+id/e_date"
+                android:text="Venue"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+  android:textColor="#000"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/e_time"
+                app:layout_widthPercent="15%"
+                app:layout_heightPercent="5%"
+                android:layout_below="@+id/ydp_event_description_1"
+                android:layout_toRightOf="@+id/e_venue"
+                android:text="Time"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+  android:textColor="#000"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/e_date_select"
+                app:layout_widthPercent="18%"
+                app:layout_heightPercent="5%"
+                android:layout_below="@+id/e_date"
+                android:text="2.2.2018"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+  android:textColor="#000"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/e_venue_select"
+                app:layout_widthPercent="18%"
+                app:layout_heightPercent="5%"
+                android:layout_below="@+id/e_venue"
+                android:layout_toRightOf="@+id/e_date_select"
+                android:text="Ludhiana"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+  android:textColor="#000"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/e_time_select"
+                app:layout_widthPercent="15%"
+                app:layout_heightPercent="5%"
+                android:layout_below="@+id/e_venue"
+                android:layout_toRightOf="@+id/e_venue_select"
+                android:text="10 am"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+  android:textColor="#000"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/ydp_total_people"
+                app:layout_widthPercent="75%"
+                app:layout_heightPercent="8%"
+                android:layout_below="@+id/e_date_select"
+                android:text="Total People Register"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="4%"
+                android:gravity="center_horizontal|center_vertical"
+                app:layout_marginTopPercent="4%"
+  android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:background="@drawable/text_view"
+                />
+            <TextView
+                android:id="@+id/ydp_total_people_count"
+                app:layout_widthPercent="10%"
+                app:layout_heightPercent="8%"
+                android:layout_below="@+id/e_date_select"
+                android:layout_toRightOf="@+id/ydp_total_people"
+                android:text="10"
+                app:layout_marginLeftPercent="1%"
+                app:layout_marginTopPercent="4%"
+  android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:background="@drawable/text_view_count"
+                android:gravity="center_horizontal|center_vertical"/>
+            <TextView
+                android:id="@+id/ydp_highlight"
+                app:layout_widthPercent="95%"
+                app:layout_heightPercent="8%"
+                android:layout_below="@+id/ydp_total_people"
+                android:text="Highlight of the Event"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="4%"
+  android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/ydp_highlight_detail"
+                android:layout_below="@+id/ydp_highlight"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Full Conference Program. This year's National Conference between 18-20 February 2018 is at the Four Points Hotel,"
+  android:textColor="#000"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+                app:layout_widthPercent="95%" />
+            <TextView
+                android:id="@+id/ydp_attendies"
+                app:layout_widthPercent="75%"
+                app:layout_heightPercent="8%"
+                android:layout_below="@+id/ydp_highlight_detail"
+                android:text="Total No. of Attendies"
+                app:layout_marginLeftPercent="4%"
+                android:gravity="center_horizontal|center_vertical"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="4%"
+  android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:background="@drawable/text_view"/>
+            <TextView
+                android:id="@+id/ydp_attendies_count"
+                app:layout_widthPercent="10%"
+                app:layout_heightPercent="8%"
+                android:layout_below="@+id/ydp_highlight_detail"
+                android:layout_toRightOf="@+id/ydp_attendies"
+                android:text="10"
+                app:layout_marginLeftPercent="1%"
+                app:layout_marginTopPercent="4%"
+  android:textColor="#000"
+                android:gravity="center_horizontal|center_vertical"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:background="@drawable/text_view_count"/>
+            <TextView
+                android:id="@+id/ydp_session_givers"
+                app:layout_widthPercent="95%"
+                app:layout_heightPercent="8%"
+                android:layout_below="@+id/ydp_attendies"
+                android:text="Session Givers"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="4%"
+  android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/e_session_1"
+                app:layout_widthPercent="50%"
+                app:layout_heightPercent="5%"
+                android:layout_below="@+id/ydp_session_givers"
+                android:text="(Name of Session Givers)"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+  android:textColor="#000"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/e_session_2"
+                app:layout_widthPercent="50%"
+                app:layout_heightPercent="5%"
+                android:layout_below="@+id/e_session_1"
+                android:text="(Name of Session Givers)"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+  android:textColor="#000"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/e_session_3"
+                app:layout_widthPercent="50%"
+                app:layout_heightPercent="5%"
+                android:layout_below="@+id/e_session_2"
+                android:text="(Name of Session Givers)"
+                app:layout_marginLeftPercent="8%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+  android:textColor="#000"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/ydp_people_reg_by_ca"
+                app:layout_widthPercent="79%"
+                app:layout_heightPercent="8%"
+                android:layout_below="@+id/e_session_3"
+                android:text="People Register By You"
+                app:layout_marginLeftPercent="4%"
+                android:gravity="center_horizontal|center_vertical"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="4%"
+  android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:background="@drawable/text_view"/>
+            <TextView
+                android:id="@+id/e_people_reg_count"
+                app:layout_widthPercent="10%"
+                app:layout_heightPercent="8%"
+                android:layout_below="@+id/e_session_3"
+                android:layout_toRightOf="@+id/ydp_people_reg_by_ca"
+                android:text="10"
+                android:gravity="center_horizontal|center_vertical"
+                app:layout_marginLeftPercent="1%"
+                app:layout_marginTopPercent="4%"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:background="@drawable/text_view_count"/>
+
+            <Button
+                android:id="@+id/ydp_button"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/register"
+                android:layout_below="@+id/ydp_people_reg_by_ca"
+                app:layout_heightPercent="20%"
+                app:layout_marginTopPercent="4%"
+                app:layout_widthPercent="30%" />
+            <TextView
+                android:id="@+id/ydp_terms"
+                app:layout_widthPercent="50%"
+                app:layout_heightPercent="5%"
+                android:layout_below="@+id/ydp_button"
+                android:text="+ Terms and Conditions"
+                app:layout_marginLeftPercent="2%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="4%"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+</ScrollView>

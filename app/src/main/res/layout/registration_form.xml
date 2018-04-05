@@ -1,0 +1,255 @@
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/r_scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="DuplicateIds"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:background="#fff"
+    android:clickable="true"
+    android:windowSoftInputMode="adjustResize">
+
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout-->
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/r_icon_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginTopPercent="9%"
+                app:srcCompat="@drawable/icon_user" />
+            <EditText
+                android:id="@+id/r_firstname"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:textColorHint="#000"
+                app:layout_heightPercent="10%"
+                app:layout_marginTopPercent="5%"
+                app:layout_widthPercent="90%"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="6%"
+                android:layout_toRightOf="@+id/r_icon_first_name"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000"/>
+
+            <ImageView
+                android:id="@+id/r_icon_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginTopPercent="20%"
+                android:src="@drawable/icon_user" />
+            <EditText
+                android:id="@+id/r_lastname"
+                android:layout_below="@+id/r_firstname"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:textColorHint="#000"
+                app:layout_heightPercent="10%"
+                app:layout_marginTopPercent="1%"
+                app:layout_widthPercent="90%"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="6%"
+                android:layout_toRightOf="@+id/r_icon_last_name"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000"/>
+
+            <ImageView
+                android:id="@+id/r_icon_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginTopPercent="31%"
+                app:srcCompat="@drawable/icon_courses" />
+            <EditText
+                android:id="@+id/r_course"
+                android:layout_below="@+id/r_lastname"
+                android:hint="Course"
+                android:inputType="text"
+                android:textColorHint="#000"
+                app:layout_heightPercent="10%"
+                app:layout_marginTopPercent="1%"
+                app:layout_widthPercent="90%"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="6%"
+                android:layout_toRightOf="@+id/r_icon_course"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000"/>
+
+            <ImageView
+                android:id="@+id/r_icon_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginTopPercent="42%"
+                app:srcCompat="@drawable/icon_event"/>
+            <EditText
+                android:id="@+id/r_duration"
+                android:layout_below="@+id/r_course"
+                android:hint="Duration"
+                android:inputType="time"
+                android:textColorHint="#000"
+                app:layout_heightPercent="10%"
+                app:layout_marginTopPercent="1%"
+                app:layout_widthPercent="90%"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="6%"
+                android:layout_toRightOf="@+id/r_icon_duration"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000"/>
+
+            <ImageView
+                android:id="@+id/r_icon_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginTopPercent="53%"
+                app:srcCompat="@drawable/icon_contact"/>
+            <EditText
+                android:id="@+id/r_contact"
+                android:layout_below="@+id/r_duration"
+                android:hint="Contact"
+                android:inputType="phone"
+                android:textColorHint="#000"
+                app:layout_heightPercent="10%"
+                app:layout_marginTopPercent="1%"
+                app:layout_widthPercent="90%"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="6%"
+                android:layout_toRightOf="@+id/r_icon_contact"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000"/>
+
+
+            <ImageView
+                android:id="@+id/r_icon_college"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginTopPercent="64%"
+                app:srcCompat="@drawable/icon_college" />
+            <EditText
+                android:id="@+id/r_college"
+                android:layout_below="@+id/r_contact"
+                android:hint="College Name"
+                android:inputType="text"
+                android:textColorHint="#000"
+                app:layout_heightPercent="10%"
+                app:layout_marginTopPercent="1%"
+                app:layout_widthPercent="90%"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="6%"
+                android:layout_toRightOf="@+id/r_icon_college"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000"/>
+
+            <ImageView
+                android:id="@+id/r_icon_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginTopPercent="76%"
+                app:srcCompat="@drawable/icon_email"/>
+            <EditText
+                android:id="@+id/r_email"
+                android:layout_below="@+id/r_college"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#000"
+                app:layout_heightPercent="10%"
+                app:layout_marginTopPercent="1%"
+                app:layout_widthPercent="90%"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="6%"
+                android:layout_toRightOf="@+id/r_icon_college"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000"/>
+
+
+            <ImageView
+                android:id="@+id/r_icon_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginTopPercent="86%"
+                app:srcCompat="@drawable/icon_address"/>
+            <EditText
+                android:id="@+id/r_address"
+                android:layout_below="@+id/r_email"
+                android:hint="Address"
+                android:inputType="textPostalAddress"
+                android:textColorHint="#000"
+                app:layout_heightPercent="10%"
+                app:layout_marginTopPercent="1%"
+                app:layout_widthPercent="90%"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="6%"
+                android:layout_toRightOf="@+id/r_icon_contact"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000"/>
+
+
+
+            <ImageView
+                android:id="@+id/r_icon_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginTopPercent="97%"
+                app:srcCompat="@drawable/icon_state"/>
+            <Spinner
+                android:id="@+id/r_state"
+                android:layout_below="@+id/r_address"
+                app:layout_widthPercent="90%"
+                app:layout_heightPercent="10%"
+                android:layout_centerHorizontal="true"
+                android:entries="@array/States"
+                app:layout_marginTopPercent="1%"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="6%"
+                android:layout_toRightOf="@+id/r_icon_state"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000"/>
+
+
+            <!--app:ms_alignLabels="false"-->
+            <!--app:ms_arrowColor="#fff"-->
+            <!--app:ms_arrowSize="16dp"-->
+            <!--app:ms_enableFloatingLabel="true"-->
+            <!--app:ms_hint="Select Country"-->
+            <!--app:ms_hintColor="#fff"-->
+            <!--app:ms_multiline="true"-->
+
+            <Button
+                android:id="@+id/r_submit_button"
+                android:layout_below="@+id/r_state"
+                android:layout_centerHorizontal="true"
+                android:text="Submit"
+                android:textColor="#000"
+                android:textSize="15dp"
+                app:layout_heightPercent="10%"
+                app:layout_marginBottomPercent="5%"
+                app:layout_marginTopPercent="5%"
+                app:layout_widthPercent="60%" />
+
+        </android.support.percent.PercentRelativeLayout>
+    <!--</android.support.constraint.ConstraintLayout>-->
+</ScrollView>

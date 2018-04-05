@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:clickable="true"
+    tools:context=".NavigationLeft">
+
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon_registration_form"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="5%"
+        android:layout_alignLeft="@+id/Registration_form"
+        android:layout_alignParentStart="true"
+        app:layout_marginTopPercent="3%"
+        app:layout_marginLeftPercent="4%"
+        app:srcCompat="@drawable/icon_form" />
+
+
+    <TextView
+        android:id="@+id/Registration_form"
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="5%"
+        app:layout_marginTopPercent="3%"
+        app:layout_marginLeftPercent="15%"
+        android:text="Registration Form"
+        android:clickable="true"
+
+        android:textSize="15dp"
+        android:textColor="#000" />
+
+
+    <View
+        android:id="@+id/view_registration"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="0.1%"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginRightPercent="3%"
+        android:layout_below="@+id/Registration_form"
+        android:background="#e2d9d9" />
+
+    <ImageView
+        android:id="@+id/icon_wallet"
+        app:layout_widthPercent="7%"
+        app:layout_heightPercent="5%"
+        android:layout_alignLeft="@+id/wallet"
+        android:layout_alignParentStart="true"
+        app:layout_marginTopPercent="11%"
+        app:layout_marginLeftPercent="4%"
+        app:srcCompat="@drawable/icon_wallet" />
+
+    <TextView
+        android:id="@+id/wallet"
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="5%"
+        app:layout_marginTopPercent="2%"
+        android:layout_below="@+id/view_registration"
+        app:layout_marginLeftPercent="15%"
+        android:text="Wallet"
+        android:clickable="true"
+
+        android:textSize="15dp"
+        android:textColor="#000"/>
+    <View
+        android:id="@+id/view_wallet"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="0.1%"
+        app:layout_marginTopPercent="1%"
+        android:layout_below="@+id/wallet"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginRightPercent="3%"
+        android:background="#e2d9d9" />
+
+    <ImageView
+        android:id="@+id/icon_offers"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="5%"
+        android:layout_alignLeft="@+id/wallet"
+      android:layout_alignParentStart="true"
+        app:layout_marginTopPercent="19%"
+        app:layout_marginLeftPercent="4%"
+        app:srcCompat="@drawable/icon_offers" />
+    <TextView
+        android:id="@+id/offers"
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="5%"
+        app:layout_marginTopPercent="2%"
+        android:layout_below="@+id/view_wallet"
+        app:layout_marginLeftPercent="15%"
+        android:text="Offers Around Me"
+        android:textSize="15dp"
+        android:textColor="#000"/>
+    <View
+        android:id="@+id/view_offer"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="0.1%"
+        app:layout_marginTopPercent="1%"
+        android:layout_below="@+id/offers"
+        app:layout_marginLeftPercent="3%"
+        android:background="#e2d9d9"
+        app:layout_marginRightPercent="3%"/>
+
+
+    <ImageView
+        android:id="@+id/icon_profile"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="5%"
+        android:layout_alignLeft="@+id/profile"
+        android:layout_alignParentStart="true"
+        app:layout_marginTopPercent="27%"
+        app:layout_marginLeftPercent="4%"
+        app:srcCompat="@drawable/icon_profile" />
+
+    <TextView
+        android:id="@+id/profile"
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="5%"
+        app:layout_marginTopPercent="2%"
+
+        android:layout_below="@+id/view_offer"
+        app:layout_marginLeftPercent="15%"
+        android:text="My Profile"
+        android:textSize="15dp"
+        android:textColor="#000"/>
+    <View
+        android:id="@+id/view_profile"
+        android:layout_width="match_parent"
+        app:layout_marginLeftPercent="3%"
+        app:layout_heightPercent="0.1%"
+        app:layout_marginTopPercent="1%"
+        android:layout_below="@+id/profile"
+        android:background="#e2d9d9"
+        app:layout_marginRightPercent="3%"/>
+    <ImageView
+        android:id="@+id/icon_help"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="5%"
+        android:layout_alignLeft="@+id/help_desk"
+        android:layout_alignParentStart="true"
+        app:layout_marginTopPercent="35%"
+        app:layout_marginLeftPercent="4%"
+        app:srcCompat="@drawable/icon_help" />
+
+    <TextView
+        android:id="@+id/help_desk"
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="5%"
+        app:layout_marginTopPercent="2%"
+        android:layout_below="@+id/view_profile"
+        app:layout_marginLeftPercent="15%"
+        android:text="Help Desk"
+
+        android:textSize="15dp"
+        android:textColor="#000"/>
+    <View
+        android:id="@+id/view_helpdesk"
+        android:layout_width="match_parent"
+        app:layout_marginLeftPercent="3%"
+        app:layout_heightPercent="0.1%"
+        app:layout_marginTopPercent="1%"
+        android:layout_below="@+id/help_desk"
+        android:background="#e2d9d9"
+        app:layout_marginRightPercent="3%"/>
+    <ImageView
+        android:id="@+id/icon_campus"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="5%"
+        android:layout_alignLeft="@+id/campus_ambass"
+        android:layout_alignParentStart="true"
+        app:layout_marginTopPercent="43%"
+        app:layout_marginLeftPercent="4%"
+        app:srcCompat="@drawable/icon_ca_form" />
+
+    <TextView
+        android:id="@+id/campus_ambass"
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="5%"
+        app:layout_marginTopPercent="2%"
+        android:layout_below="@+id/view_helpdesk"
+        app:layout_marginLeftPercent="15%"
+        android:text="Enroll Campus"
+
+        android:textSize="15dp"
+        android:textColor="#000"/>
+    <View
+        android:id="@+id/view_campus"
+        android:layout_width="match_parent"
+        app:layout_marginLeftPercent="3%"
+        app:layout_heightPercent="0.1%"
+        app:layout_marginTopPercent="1%"
+        android:layout_below="@+id/campus_ambass"
+        android:background="#e2d9d9"
+        app:layout_marginRightPercent="3%"/>
+
+
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/Bottomnavigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+</android.support.percent.PercentRelativeLayout>
+</LinearLayout>

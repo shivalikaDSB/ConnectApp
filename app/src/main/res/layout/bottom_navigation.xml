@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BottomNavigation">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#fff" >
+        <ScrollView
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/r_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#fff">
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/Wallet_card"
+                android:layout_width="380dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+            <TextView
+                android:id="@+id/d_wallet"
+                android:layout_width="380dp"
+                android:layout_height="180dp"
+                android:text="Wallet"
+                android:textColor="#000"
+                android:gravity="center_horizontal|center_vertical"
+                android:clickable="true"
+                android:onClick="wallet"
+                tools:ignore="OnClick"
+                />
+            </android.support.v7.widget.CardView>
+            <!--<ImageView-->
+            <!--android:id="@+id/d_icon_score"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout_marginLeftPercent="6%"-->
+            <!--app:layout_marginTopPercent="18.5%"-->
+            <!--android:src="@drawable/icon_menu"/>-->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/score_card"
+                android:layout_width="380dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_below="@+id/Wallet_card"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+            <TextView
+                android:id="@+id/d_myscore"
+                android:layout_width="380dp"
+                android:layout_height="180dp"
+                android:text="My Score"
+                android:textColor="#000"
+                android:gravity="center_horizontal|center_vertical"
+                android:clickable="true"
+                android:onClick="myscore"
+                tools:ignore="OnClick"
+                />
+            </android.support.v7.widget.CardView>
+            <!--<ImageView-->
+            <!--android:id="@+id/d_icon_upcoming"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout_marginLeftPercent="6%"-->
+            <!--app:layout_marginTopPercent="30.5%"-->
+            <!--android:src="@drawable/icon_menu"/>-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/upcoming_event_card"
+                android:layout_width="380dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_below="@+id/score_card"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+            <TextView
+                android:id="@+id/d_upcoming"
+                android:layout_width="380dp"
+                android:layout_height="180dp"
+                android:text="Upcoming Programs"
+                android:textColor="#000"
+                android:gravity="center_horizontal|center_vertical"
+                android:clickable="true"
+                android:onClick="upcoming"
+                tools:ignore="OnClick" />
+            </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingTop="15dp"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation"
+        app:itemIconTint="@android:color/black"/>
+
+</LinearLayout>
+<!--</ScrollView>-->

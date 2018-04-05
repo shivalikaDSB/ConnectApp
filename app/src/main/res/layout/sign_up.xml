@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <RelativeLayout
+        android:id="@+id/relative1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="@drawable/img_signup1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_signup2"
+            android:orientation="vertical"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"></LinearLayout>
+    android:background="@android:color/transparent"
+
+
+            <ImageView
+                android:id="@+id/m_logo"
+                android:layout_width="match_parent"
+                android:layout_height="147dp"
+                android:src="@drawable/logo_dsb_edutech"
+                app:layout_marginTopPercent="5%"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"/>
+
+            <TextView
+                android:id="@+id/basic_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/m_logo"
+                android:text="Basic Information"
+                android:textColor="#3574db"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/s_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/basic_info"
+                android:backgroundTint="#000"
+                android:gravity="left"
+                android:hint="First Name"
+                android:textColorHint="#000"
+                android:inputType="textCapWords"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_centerHorizontal="true"
+                android:textCursorDrawable="@android:color/black"
+                android:layout_marginTop="1dp"/>
+            <!--android:textCursorDrawable="@color/colorPrimary"-->
+            <EditText
+                android:id="@+id/s_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/s_firstname"
+                android:hint="Last Name"
+                android:textColorHint="#000"
+                android:inputType="textCapWords"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="1dp"/>
+            <EditText
+                android:id="@+id/e2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/s_lastname"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#000"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="1dp"/>
+            <EditText
+                android:id="@+id/e4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/e2"
+                android:gravity="left"
+                android:hint="Mobile"
+                android:textColorHint="#000"
+                android:inputType="phone"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/t2"-->
+                <!--android:layout_below="@+id/e4"-->
+                <!--android:gravity="left"-->
+                <!--android:text="Login Information"-->
+                <!--android:textColor="#3574db"-->
+                <!--android:textSize="20dp"-->
+                <!--app:layout_heightPercent="5%"-->
+                <!--app:layout_marginTopPercent="5%"-->
+                <!--app:layout_widthPercent="70%"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:textStyle="bold"/>-->
+            <!--<EditText-->
+                <!--android:id="@+id/r_username"-->
+                <!--android:layout_below="@+id/t2"-->
+                <!--android:drawableBottom="#3574db"-->
+                <!--android:gravity="left"-->
+                <!--android:hint="Username"-->
+                <!--android:inputType="text"-->
+                <!--android:textColorHint="#000"-->
+                <!--app:layout_heightPercent="10%"-->
+                <!--app:layout_marginTopPercent="1%"-->
+                <!--app:layout_widthPercent="70%"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:textCursorDrawable="@android:color/black"-->
+                <!--android:backgroundTint="#000"/>-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/e3"-->
+                <!--android:layout_below="@+id/r_username"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:drawableBottom="#3574db"-->
+                <!--android:fontFamily="@font/unifrakturmaguntia"-->
+                <!--android:gravity="left"-->
+                <!--android:hint="Password"-->
+                <!--android:inputType="textWebPassword"-->
+                <!--android:textColorHint="#000"-->
+                <!--app:layout_heightPercent="10%"-->
+                <!--app:layout_marginTopPercent="1%"-->
+                <!--app:layout_widthPercent="70%"-->
+                <!--android:textCursorDrawable="@android:color/black"-->
+                <!--android:backgroundTint="#000"/>-->
+            <!--<EditText-->
+                <!--android:id="@+id/confirm_password"-->
+                <!--android:layout_below="@+id/e3"-->
+                <!--android:gravity="left"-->
+                <!--android:hint="Confirm Password"-->
+                <!--android:inputType="textWebPassword"-->
+                <!--android:textColorHint="#000"-->
+                <!--android:fontFamily="@font/unifrakturmaguntia"-->
+                <!--app:layout_heightPercent="10%"-->
+                <!--app:layout_marginTopPercent="1%"-->
+                <!--app:layout_widthPercent="70%"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:textCursorDrawable="@android:color/black"-->
+                <!--android:backgroundTint="#000"/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/b1"-->
+                <!--android:layout_below="@+id/confirm_password"-->
+                <!--android:background="@drawable/edit_text"-->
+                <!--android:text="Sign Up"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textColor="#ffffff"-->
+                <!--app:layout_heightPercent="8%"-->
+                <!--app:layout_marginLeftPercent="13%"-->
+                <!--app:layout_marginTopPercent="5%"-->
+                <!--app:layout_widthPercent="70%"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:gravity="center"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/t3"-->
+                <!--app:layout_widthPercent="45%"-->
+                <!--app:layout_heightPercent="5%"-->
+                <!--android:layout_below="@+id/b1"-->
+                <!--android:text="Already have an account"-->
+                <!--android:textColor="#3574db"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--app:layout_marginLeftPercent="27%"-->
+                <!--app:layout_marginTopPercent="3%"-->
+                <!--app:layout_marginBottomPercent="5%"-->
+                <!--android:onClick="showaccount"-->
+                <!--android:clickable="true" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/b1"-->
+                <!--android:layout_toRightOf="@id/t3"-->
+                <!--android:background="@drawable/icon_forget_password"-->
+                <!--app:layout_heightPercent="3%"-->
+                <!--app:layout_marginBottomPercent="5%"-->
+                <!--app:layout_marginLeftPercent="2%"-->
+                <!--app:layout_marginTopPercent="3%"-->
+                <!--app:layout_widthPercent="5%" />-->
+
+
+        </RelativeLayout>
+
+
+<!--</ScrollView>-->

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="true"
+    tools:context=".MoneyYDP">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".NavigationLeft">
+
+        <android.support.percent.PercentRelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- TODO: Update blank fragment layout -->
+            <TextView
+                android:id="@+id/m_ydp_event1"
+                app:layout_widthPercent="13%"
+                app:layout_heightPercent="7%"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginTopPercent="5%"
+                android:text="Event1"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/m_ydp_event2"
+                app:layout_widthPercent="13%"
+                app:layout_heightPercent="7%"
+                app:layout_marginTopPercent="5%"
+                app:layout_marginLeftPercent="6%"
+                android:layout_below="@+id/m_ydp_event1"
+                android:text="Event2"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/m_ydp_event3"
+                app:layout_widthPercent="13%"
+                app:layout_heightPercent="7%"
+                app:layout_marginTopPercent="5%"
+                app:layout_marginLeftPercent="6%"
+                android:layout_below="@+id/m_ydp_event2"
+                android:text="Event3"
+                android:textColor="#000"/>
+        </android.support.percent.PercentRelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

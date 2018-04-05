@@ -1,0 +1,60 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="true"
+    tools:context=".PointsTotal">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".NavigationLeft">
+
+        <android.support.percent.PercentRelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!-- TODO: Update blank fragment layout -->
+            <TextView
+                android:id="@+id/totalpoints_all_time"
+                app:layout_widthPercent="20%"
+                app:layout_heightPercent="7%"
+                app:layout_marginTopPercent="5%"
+                app:layout_marginLeftPercent="6%"
+                android:text="All Time" 
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/totalpoints_quarterly"
+                app:layout_widthPercent="20%"
+                app:layout_heightPercent="7%"
+                app:layout_marginTopPercent="5%"
+                app:layout_marginLeftPercent="6%"
+                android:layout_below="@+id/totalpoints_all_time"
+                android:text="Quarterly"
+                android:textColor="#000"/>
+            <TextView
+            android:id="@+id/totalpoints_monthly"
+            app:layout_widthPercent="20%"
+            app:layout_heightPercent="7%"
+            app:layout_marginTopPercent="5%"
+            app:layout_marginLeftPercent="6%"
+            android:layout_below="@+id/totalpoints_quarterly"
+            android:text="Monthly"
+            android:textColor="#000"/>
+            <TextView
+                android:id="@+id/totalpoints_weekly"
+                app:layout_widthPercent="20%"
+                app:layout_heightPercent="7%"
+                app:layout_marginTopPercent="5%"
+                app:layout_marginLeftPercent="6%"
+                android:layout_below="@+id/totalpoints_monthly"
+                android:text="Weekly"
+                android:textColor="#000"/>
+        </android.support.percent.PercentRelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="true"
+    tools:context=".UpcomingEventActivity">
+
+
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <TextView
+            android:id="@+id/d_up_icdp"
+            app:layout_widthPercent="15%"
+            app:layout_heightPercent="10%"
+            android:text="ICDP"
+            android:textColor="#000"
+            app:layout_marginTopPercent="5%"
+            android:clickable="true"
+            app:layout_marginLeftPercent="6%"/>
+
+    <TextView
+        android:id="@+id/d_up_ydp"
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="10%"
+        android:text="YDP"
+        android:layout_below="@+id/d_up_icdp"
+        android:textColor="#000"
+        app:layout_marginTopPercent="10%"
+        android:clickable="true"
+        app:layout_marginLeftPercent="6%"/>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

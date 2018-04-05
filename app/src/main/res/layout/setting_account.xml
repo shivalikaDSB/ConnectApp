@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="vertical"
+    android:background="#fff"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/a_name"
+                android:autoText="true"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                app:layout_heightPercent="10%"
+                app:layout_marginLeftPercent="14%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="8%"
+                app:layout_widthPercent="90%"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000" />
+
+            <EditText
+                android:id="@+id/a_date"
+                android:layout_below="@+id/a_name"
+                android:hint="Date of Birth"
+                android:inputType="date"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                app:layout_heightPercent="10%"
+                app:layout_marginLeftPercent="14%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+                app:layout_widthPercent="90%"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000" />
+
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_below="@+id/gender"
+                android:hint="Address"
+                android:inputType="textPostalAddress"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                app:layout_heightPercent="10%"
+                app:layout_marginLeftPercent="14%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+                app:layout_widthPercent="90%"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000" />
+
+            <EditText
+                android:id="@+id/emailId"
+                android:layout_below="@+id/contact"
+
+                android:hint="Email"
+                android:inputType="textWebEmailAddress"
+                android:textColor="#000"
+                android:textColorHint="#000"
+
+                app:layout_heightPercent="10%"
+                app:layout_marginLeftPercent="14%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+                app:layout_widthPercent="90%"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000" />
+
+
+            <EditText
+                android:id="@+id/contact"
+                android:layout_below="@+id/spinner_state"
+                android:hint="Contact"
+                android:inputType="number"
+                android:textColor="#000"
+                android:textColorHint="#000"
+
+                app:layout_heightPercent="10%"
+                app:layout_marginLeftPercent="14%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+                app:layout_widthPercent="90%"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000" />
+
+            <Button
+                android:id="@+id/upa_date"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="34dp"
+                android:text="Update"
+                android:textColor="#000"
+                app:layout_heightPercent="25%"
+                app:layout_marginTopPercent="87%"
+                app:layout_widthPercent="44%" />
+
+            <ImageView
+                android:id="@+id/icon_a_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/a_name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="6%"
+                app:layout_marginTopPercent="12%"
+                app:srcCompat="@drawable/icon_user"/>
+
+            <ImageView
+                android:id="@+id/icon_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="6%"
+                app:layout_marginTopPercent="23%"
+                app:srcCompat="@drawable/icon_dob"
+                android:layout_alignLeft="@+id/address"/>
+
+
+            <ImageView
+                android:id="@+id/icon_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="6%"
+                app:layout_marginTopPercent="34%"
+                app:srcCompat="@drawable/icon_gender"
+                android:layout_alignLeft="@+id/spinner_state"/>
+
+            <ImageView
+                android:id="@+id/icon_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="6%"
+                app:layout_marginTopPercent="45%"
+                app:srcCompat="@drawable/icon_address"
+                android:layout_alignLeft="@+id/address"/>
+            <ImageView
+                android:id="@+id/icon_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="6%"
+                app:layout_marginTopPercent="78%"
+                app:srcCompat="@drawable/icon_email"
+                android:layout_alignLeft="@+id/emailId"/>
+
+            <ImageView
+                android:id="@+id/icon_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/contact"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="6%"
+                app:layout_marginTopPercent="56%"
+                app:srcCompat="@drawable/icon_state" />
+
+            <ImageView
+                android:id="@+id/icon_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/contact"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="6%"
+                app:layout_marginTopPercent="67%"
+                app:srcCompat="@drawable/icon_contact" />
+
+            <Spinner
+                android:id="@+id/gender"
+                app:layout_widthPercent="90%"
+                app:layout_heightPercent="10%"
+                app:layout_marginLeftPercent="14%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+                android:layout_below="@+id/a_date"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+
+                android:entries="@array/Gender"
+                tools:ignore="MissingConstraints"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000" />
+            <!--android:popupBackground="#a76565"-->
+
+            <Spinner
+                android:id="@+id/spinner_state"
+                app:layout_widthPercent="90%"
+                app:layout_heightPercent="10%"
+                app:layout_marginLeftPercent="14%"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="1%"
+                android:layout_below="@+id/address"
+                android:entries="@array/States"
+                android:textCursorDrawable="@android:color/black"
+                android:backgroundTint="#000"
+                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+            <!--style="@style/mySpinnerItemStyle"-->
+            <!--android:popupBackground="#000"/>-->
+
+        </android.support.percent.PercentRelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
