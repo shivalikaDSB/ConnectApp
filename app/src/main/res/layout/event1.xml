@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:clickable="true"
+    tools:context=".MyPoints"
+    android:layout_marginTop="150dp">
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@android:color/transparent">
+    </RelativeLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        tools:context=".NavigationLeft"
+        android:layout_marginTop="1dp"
+        android:background="#b8fffd">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/event1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="Event1"/>
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginLeft="60dp"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:textSize="40dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Event1"/>-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:text="Full Conference Program. This year's National Conference between 18-20 February 2018 is at the Four Points Hotel"/>
+
+    </LinearLayout>
+
+    <!--<HorizontalScrollView-->
+        <!--android:layout_width=""-->
+        <!--android:layout_height=""></HorizontalScrollView>-->
+
+</FrameLayout>
